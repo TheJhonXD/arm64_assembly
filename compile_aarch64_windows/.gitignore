@@ -1,0 +1,47 @@
+# Archivos objeto
+*.o
+*.obj
+
+# Archivos ejecutables
+*.out
+*.exe
+*.elf
+*.bin
+*.axf
+
+# Archivos de enlazador
+*.ld
+*.map
+
+# Archivos de depuración
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Archivos de ensamblador generados
+*.lst
+*.s~
+
+# Archivos de configuración de IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos de build
+build/
+dist/
+*.a
+*.so
+*.dylib
+
+# Archivos de simulador/emulador
+*.img
+*.iso
+
+# Archivos temporales
+*.tmp
+*.bak
+*.log

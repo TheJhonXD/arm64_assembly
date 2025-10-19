@@ -1,0 +1,9 @@
+services:
+  arm64-compiler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: /bin/bash -c "aarch64-linux-gnu-as -o codigo.o codigo.s && aarch64-linux-gnu-gcc -static -o codigo codigo.o && echo 'Ejecutando codigo con QEMU...' && qemu-aarch64 codigo && echo '-------------------------' && echo 'Código de salida:' $$?"
